@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    position:fixed;
+    top:0;
+    background: #cb0000;
+    margin:0;
+    height: 91px;
+    width: 100%;
+    font-size: 2.3rem;
+    font-weight: bold;
+    align-items: center;
+    border: #960000;
+    border-style: solid;
+    border-width: medium;
+}
+
+.flash{
+    color: #ffff;
+}
+
+body{
+    font-family: 'Menlo', sans-serif;
+}
