@@ -9,18 +9,20 @@ export default function Collection(props){
     async function fetchCollection(){
     let response = await axios.get('http://127.0.0.1:8000/api/collections/')
     console.log(response)
-    debugger
     setCollections(response.data)
     }
-
+    //This function is recieving "el" from the onClick. "el" represents a collection object
+    function handleClick(collection){
+        console.log(collection)
+        props.setSelectedCollection(collection.id)
+    }
     return(
         <div>
             <div>
                 {collections.map((el) => {
                     return (
-                        <div>
+                        <div onClick={()=>handleClick(el)}>
                             <h3>{el.title}</h3>
-                            <h3>{el.description}</h3>
                         </div>
                     );
                 })}

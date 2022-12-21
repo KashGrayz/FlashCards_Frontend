@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 0;
 }
 
 header{
@@ -24,4 +25,5 @@ header{
 
 body{
     font-family: 'Menlo', sans-serif;
+    margin-top: 10rem;
 }
